@@ -11,11 +11,6 @@ public class MoveScreen : MonoBehaviour
     private Vector3 startPos;
     private Vector3 endPos;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
-
     private void Start()
     {
         startPos = transform.position;
@@ -32,7 +27,7 @@ public class MoveScreen : MonoBehaviour
         endPos.x -= speed * Time.deltaTime;
         transform.position = endPos;
 
-        if (endPos.x <= -35.28f)
+        if (endPos.x <= range)
         {
             transform.position = startPos;
             endPos = transform.position;
