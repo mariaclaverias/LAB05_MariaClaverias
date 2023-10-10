@@ -45,7 +45,7 @@ public class PlayerData : MonoBehaviour
         if (other.gameObject.tag == "Alien" ||
             other.gameObject.tag == "Trash")
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             RemoveLife();
 
             if (life == 0f)
