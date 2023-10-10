@@ -46,5 +46,11 @@ public class EnemyBullet : MonoBehaviour
             isSetUp = false;
             myPooling.ObjectReturn(this.gameObject);
         }
+
+        if (collision.tag == "Bullet")
+        {
+            isSetUp = false;
+            myPooling.ObjectReturn(this.gameObject);
+        }
     }
 }
