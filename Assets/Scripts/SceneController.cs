@@ -9,4 +9,10 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(name);
     }
+
+    public void ReturnToMenu()
+    {
+        SceneGlobalManager.Instance.UnloadGameAndResultsScenes();
+        SceneManager.LoadScene("Menu");
+    }
 }

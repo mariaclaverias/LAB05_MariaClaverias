@@ -17,6 +17,8 @@ public class PlayerData : MonoBehaviour
     public Score score;
     public TMP_Text scoreText;
 
+    private bool isDead;
+
     void Awake()
     {
         score.score = 0f;
@@ -48,10 +50,11 @@ public class PlayerData : MonoBehaviour
             //Destroy(other.gameObject);
             RemoveLife();
 
-            if (life == 0f)
+            if (life == 0f && !isDead)
             {
                 score.HighestScore();
-                SceneManager.LoadScene("Score");
+                SceneGlobalManager.Instance.LoadResultsScene();
+                isDead = true;
             }
         }
     }
