@@ -42,7 +42,10 @@ public class Obstacle : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (gameObject.tag == "Trash" &&
-            other.gameObject.tag == "Bullet")
+            other.gameObject.tag == "Bullet" ||
+
+            gameObject.tag == "Coin" &&
+            other.gameObject.tag == "Player")
         {
             isTrigger = true;
         }

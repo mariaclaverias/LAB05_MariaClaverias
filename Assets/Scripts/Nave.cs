@@ -8,4 +8,6 @@ public class Nave : ScriptableObject
     public float life;
     public float speed;
     public GameObject skin;
+    public float cost;
+    public bool isLocked;
 }

@@ -8,6 +8,7 @@ TagManager:
   - Trash
   - Bullet
   - Collector
+  - Coin
   layers:
   - Default
   - TransparentFX
