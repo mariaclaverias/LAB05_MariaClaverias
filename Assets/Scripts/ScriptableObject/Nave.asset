@@ -15,3 +15,5 @@ MonoBehaviour:
   life: 3
   speed: 3
   skin: {fileID: 1867400137965951384, guid: be419182415569245a9426139c0bfbe4, type: 3}
+  cost: 0
+  isLocked: 1

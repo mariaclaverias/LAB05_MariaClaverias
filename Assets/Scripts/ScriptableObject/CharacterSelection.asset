@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0dd26665d49ac24780759567308ef7d, type: 3}
   m_Name: CharacterSelection
   m_EditorClassIdentifier: 
-  life: 1
-  speed: 5
-  skin: {fileID: 1867400137965951384, guid: e54f7908604367f448965b3374b49f93, type: 3}
+  life: 3
+  speed: 3
+  skin: {fileID: 1867400137965951384, guid: be419182415569245a9426139c0bfbe4, type: 3}

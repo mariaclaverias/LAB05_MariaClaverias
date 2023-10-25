@@ -22,7 +22,7 @@ public class CharacterSelectionController : MonoBehaviour
 
     public void BuyNave(Nave nave)
     {
-        if (nave.cost <= coin.coin)
+        if (coin.coin >= nave.cost)
         {
             coin.RemoveCoin(nave.cost);
             nave.isLocked = false;
